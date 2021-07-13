@@ -46,7 +46,7 @@ export default function ImportList({ onItemClick }) {
                                                 )
                                             }
                                         >
-                                            {moduleName}
+                                            {pascalCaseToHuman(moduleName)}
                                         </button>
                                     </li>
                                 )

@@ -1,6 +1,8 @@
-# Convergent React Core Examples
+# Convergent React Web Examples
 
-This is a repo developed by officers of Texas Convergent that is filled with React code examples. It's designed to serve as a reference to new developers, who are unfamiliar with React, and get them familiar with the framework as quickly as possible. 
+This is a repo developed by officers of Texas Convergent that is filled with React code examples for the web library. It's designed to serve as a reference to new developers, who are unfamiliar with React, and get them familiar with the framework as quickly as possible. 
+
+If you are working with React Native, you will have to go to the following repo for examples: (insert repo link here).
 
 ## Running the project
 
