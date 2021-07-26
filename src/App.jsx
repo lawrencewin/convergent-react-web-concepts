@@ -1,21 +1,26 @@
 import { useState } from "react"
-import ImportList from "./ImportList"
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import ROUTES from "./routes"
 
 function App() {
-    const [currModule, setCurrModule] = useState(null)
-    const ReactComponent = currModule?.default || null
     return (
-        <div style={{ fontFamily: "sans-serif" }}>
-            <div>List of topics</div>
-            <ImportList
-                onItemClick={(module) => {
-                    console.log(module)
-                    setCurrModule(module)
-                }}
-            />
-            <hr />
-            {ReactComponent ? <ReactComponent /> : null}
-        </div>
+        <Router>
+            <div style={{ fontFamily: "sans-serif" }}>
+                <Route path="/">
+                    {ROUTES.map(({ label, path }) => {
+                        return (
+                            <div style={{ marginTop: 4, marginBottom: 4 }}>
+                                <Link to={path}>{label}</Link>
+                            </div>
+                        )
+                    })}
+                    <hr />
+                </Route>
+                {ROUTES.map(({ label, ...props }) => {
+                    return <Route {...props} />
+                })}
+            </div>
+        </Router>
     )
 }
 
