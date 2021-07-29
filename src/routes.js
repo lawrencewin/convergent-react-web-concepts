@@ -26,12 +26,12 @@ const routes = [
     {
         component: RequestsBasics,
         path: "/Requests/Basics",
-        label: "5a. Requests Basics",
+        label: "5a. Axios Basics",
     },
     {
         component: RequestsAdvanced,
         path: "/Requests/Advanced",
-        label: "5b. Requests Advanced",
+        label: "5b. Axios with File Uploads",
     },
     {
         component: CenterItems,

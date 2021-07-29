@@ -24,6 +24,4 @@ From there, you will be greeted with a list of example files to chose from. Clic
 If you want to add a new example to the project, you will need to do a couple of things. 
 1. Create a folder in the `examples` directory with your example files. Make sure to follow the existing naming scheme! If your example falls under an existing topic, just put your new file under the existing folder.
  
-2. Update the object of imports in `imports.js` with the new folder and file(s). (I tried to dynamically generate the object using fs, but I couldn't get it to work due to React existin gin a browser environment. If anyone has a better solution, please tell me)
-
-    1. If you include a file in the import list, make sure it has a default export!
+2. Add a new entry in `routes.js` with the same props as the other objects. This will create a new route in the project as well as a new list entry.
