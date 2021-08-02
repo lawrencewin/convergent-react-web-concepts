@@ -8,7 +8,7 @@ export default function RequestsBasics() {
 
     const handleGET = async () => {
         // Use axios to send a GET request to my heroku server. GET requests are usually used to read data from some source.
-        // I pass in a param dict, { hello: "world" }. These params become part of the url's query string. 
+        // I pass in a param dict, { hello: "world" }. These params become part of the url's query string.
         // This is the same as below: await axios.get(`ENDPOINT?hello=world`)
         const res = await axios.get(ENDPOINT, {
             params: { hello: "world" },
@@ -19,13 +19,14 @@ export default function RequestsBasics() {
 
     const handlePOST = async () => {
         // Use axios to send a POST request to my heroku server. POST requests are used to write data to so me source (see PUT requests as well).
-        // First parameter is the URL to make the request to, second parameter is the request body, the data to send, and the third parameter is 
+        // First parameter is the URL to make the request to, second parameter is the request body, the data to send, and the third parameter is
         //   the configuration of the request.
-        // Below, I'm sending a json, which I explicitly say in the "Content-Type" header. You can send multiple data types with a POST request, 
-        //   from straight text, to javascript, to a data format called "multipart/form-data", used for complex files. 
+        // Below, I'm sending a json, which I explicitly say in the "Content-Type" header. You can send multiple data types with a POST request,
+        //   from straight text, to javascript, to a data format called "multipart/form-data", used for complex files.
         const res = await axios.post(
             ENDPOINT,
-            { // Request body, the data to send
+            {
+                // Request body, the data to send
                 i: 1,
                 love: true,
                 convergent: ["a", "b", "c"],

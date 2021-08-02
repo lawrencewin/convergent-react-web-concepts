@@ -8,7 +8,10 @@ function App() {
                 <Route path="/">
                     {ROUTES.map(({ label, path }) => {
                         return (
-                            <div style={{ marginTop: 4, marginBottom: 4 }} key={path}>
+                            <div
+                                style={{ marginTop: 4, marginBottom: 4 }}
+                                key={path}
+                            >
                                 <Link to={path}>{label}</Link>
                             </div>
                         )
