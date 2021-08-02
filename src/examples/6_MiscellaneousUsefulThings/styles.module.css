@@ -1,0 +1,39 @@
+.container1 {
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 {
+    color: green;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.container3 {
+    border: 1px solid black;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.25;
+}
+
+.container4 {
+    border: 1px solid black;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.25;
+}
+
+.container5 {
+    border: 1px solid black;
+    color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0.25;
+}

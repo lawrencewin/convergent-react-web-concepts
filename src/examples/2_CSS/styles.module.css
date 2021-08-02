@@ -1,0 +1,61 @@
+.bigblue {
+    color: DodgerBlue;
+    font-family: Arial;
+    text-align: center;
+}
+.button {
+    border-radius: 4px;
+    background-color: LightCyan;
+    width: 100px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    background-color: peachpuff;
+    background: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 30%,
+        #ffcc70 66%,
+        #ffffff 100%
+    );
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.email {
+    padding: 10px;
+}
+
+.submitButton {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #2f79ad;
+    border-radius: 4px;
+    background-color: #6db9ee;
+}
+
+.submitButton:hover {
+    background-color: #2f79ad;
+}
+
+.fun .button {
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        #ff0000,
+        #ffff00,
+        #00ff00,
+        #00ffff,
+        #ff00ff,
+        #ff0000
+    );
+}
